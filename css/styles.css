@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-/*font-family: 'Raleway', sans-serif;
-*/
+  scroll-behavior: smooth;
 
+}
+ 
 body {
   background-color: #ffffff;
   color: #333333;
@@ -19,6 +19,8 @@ body {
 /* Navbar */
 #mainNav {
   background-color: #212529;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -27,6 +29,19 @@ body {
 
 #mainNav .navbar-brand {
   transition: font-size 0.3s ease-in-out;
+}
+
+.navbar-brand{
+    position: relative;
+}
+
+.navbar-brand::after{
+    content: '.';
+    position: absolute;
+    font-size: 5rem;
+    bottom: -38px;
+    right: 63px;
+    color: var(--pink);
 }
 
 #navbarNav a {
@@ -448,5 +463,70 @@ body {
 color:#ffffff;
 }
 
-
 /* Clients */
+
+
+/*footer */
+.footer{
+    background-color:#333333 ;
+}
+
+.footer__logo p  {
+    color:#ffffff;
+    font-family: "Caveat", cursive;
+    font-size: 2rem;
+    position: relative;
+}
+
+.footer__logo p span{
+    position: relative;
+}
+
+.footer__logo p span::after{
+    content: ".";
+     position: absolute;
+    font-size: 5rem;
+    bottom: -45px;
+    right: 63px;
+    color: var(--pink);
+}
+
+.footers__lists a, .footers__lists li{
+    color: white;
+}
+
+.footers__lists ul{
+    list-style-type: none;
+}
+
+.footers__lists li{
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.footer__icon{
+    position: absolute;
+    left: -30px;
+    color: var(--pink);
+}
+
+.footer__social{
+    color: #f2f2f2ad;
+}
+
+.footer__socialIcons a{
+    color:     var(--pink);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.footer__socialIcons a:hover{
+    opacity: 0.6;
+}
+
+@media screen and (max-width:767px){
+    .footers__list1, .footers__list2{
+        text-align: center;
+    }
+}
+/*footer */
